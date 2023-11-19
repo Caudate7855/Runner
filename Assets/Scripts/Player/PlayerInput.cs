@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerMover))]
@@ -22,6 +21,5 @@ public class PlayerInput : MonoBehaviour
         {
             _mover.TryMoveRight();
         }
-        
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
@@ -7,7 +6,6 @@ public class PlayerMover : MonoBehaviour
     [SerializeField] private float _stepSize;
     [SerializeField] private float _maxLeft;
     [SerializeField] private float _maxRight;
-
     private Vector3 _targetPosition;
 
     private void Start()
@@ -38,7 +36,6 @@ public class PlayerMover : MonoBehaviour
             SetNextPosition(_stepSize);
         }
     }
-
 
     private void SetNextPosition(float stepSize)
     {

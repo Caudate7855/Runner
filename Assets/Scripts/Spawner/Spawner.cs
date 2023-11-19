@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class Spawner : ObjectPool
@@ -8,7 +6,6 @@ public class Spawner : ObjectPool
     [SerializeField] private GameObject[] _enemyTemlates;
     [SerializeField] private Transform[] _spawnPoints;
     [SerializeField] private float _secondsBetweenSpawn;
-
     private float _elapsedTime = 0;
 
     private void Start()
@@ -37,5 +34,4 @@ public class Spawner : ObjectPool
         enemy.SetActive(true);
         enemy.transform.position = spawnPoint;
     }
-    
 }

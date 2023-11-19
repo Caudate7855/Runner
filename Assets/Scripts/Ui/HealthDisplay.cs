@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 public class HealthDisplay : MonoBehaviour
@@ -20,6 +17,6 @@ public class HealthDisplay : MonoBehaviour
 
    private void OnHealthChanged(int health)
    {
-      _healthDisplay.text = "LifesS: " + health.ToString();
+      _healthDisplay.text = "Lifes: " + health.ToString();
    }
 }
