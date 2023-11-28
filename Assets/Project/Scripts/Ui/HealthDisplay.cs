@@ -1,8 +1,9 @@
+using Player;
 using UnityEngine;
 using TMPro;
 public class HealthDisplay : MonoBehaviour
 {
-   [SerializeField] private Player _player;
+   [SerializeField] private PlayerModel _player;
    [SerializeField] private TMP_Text _healthDisplay;
 
    private void OnEnable()

@@ -1,4 +1,4 @@
-using System;
+using Player;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -8,7 +8,7 @@ public class GameOverScreen : MonoBehaviour
 {
     [SerializeField] private Button _restartButton;
     [SerializeField] private Button _exitButton;
-    [SerializeField] private Player _player;
+    [SerializeField] private PlayerModel _player;
     private CanvasGroup _gameOverGroup;
 
     private void OnEnable()
